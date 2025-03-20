@@ -27,7 +27,7 @@
     "@babel/preset-env": "^7.23.2",
     "@parcel/transformer-sass": "^2.13.3",
     "jsdoc": "^4.0.4",
-    "parcel": "^2.12.0",
+    "parcel": "^2.14.1",
     "sass": "^1.72.0"
   },
   "dependencies": {
