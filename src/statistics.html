@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Disease Tracker</title>
+    <link rel="stylesheet" href="./scss/main.scss">
+    <link rel="stylesheet" href="./scss/news.scss">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon">&#9776;</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="statistics.html" class="nav-link"><i class="fas fa-chart-line"></i> Statistics</a>
+                <a href="map.html" class="nav-link"><i class="fas fa-map"></i> Map</a>
+                <a href="prevention.html" class="nav-link"><i class="fas fa-shield-alt"></i> Prevention</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="news.html" class="nav-link active"><i class="fas fa-newspaper"></i> News</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       
+        <main>
+            <section id="stats">
+                <h2>Global Statistics</h2>
+                <div style="margin: 20px 0; text-align: center">
+                    <select id="diseaseSelect" style="padding: 8px; font-size: 16px">
+                        <option value="covid">COVID-19</option>
+                        <option value="flu">Influenza</option>
+                    </select>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 20px">
+                    <div style="position: relative; height: 300px">
+                        <canvas id="mainChart"></canvas>
+                    </div>
+                    <div style="position: relative; height: 300px">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                </div>
+            </section>
+        </main>
+       
+        
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Global Disease Tracker. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./js/news.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
